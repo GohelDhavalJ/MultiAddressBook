@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPanel.master.cs" Inherits="Net_Project6.Content.AdminPanel" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="~/Content/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/CSS/MyCSS.css" rel="stylesheet" />
+    <script src="~/Content/JS/bootstrap.bundle.min.js"></script>
+    <asp:ContentPlaceHolder ID="cphead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="row col-md-12 header header A:hover" >
+                <div class="col-md-2 img-responsive" style="float:left">
+                    <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Content/Images/Darshan Universitylogo.png" Height="42px" Width="90px" />
+                </div>
+                <div class="col-md-10" style="float:right">
+                     <h1 class="MainHeading">Darshan University</h1>                       
+                     <asp:HyperLink runat="server" ID="hlCountry" Text="Country" CssClass="hyparlink" NavigateUrl="~/Admin Panel/Country/List"></asp:HyperLink>&nbsp;&nbsp; | &nbsp;&nbsp;
+                     <asp:HyperLink runat="server" ID="hlState" Text="State" CssClass="hyparlink" NavigateUrl="~/Admin Panel/State/List"></asp:HyperLink>&nbsp;&nbsp;| &nbsp;&nbsp;
+                     <asp:HyperLink runat="server" ID="hlCity" Text="City" CssClass="hyparlink" NavigateUrl="~/Admin Panel/City/List"></asp:HyperLink>&nbsp;&nbsp;| &nbsp;&nbsp;
+                     <asp:HyperLink runat="server" ID="hlContactCategory" Text="Contact Category" CssClass="hyparlink" NavigateUrl="~/Admin Panel/ContactCategory/List"></asp:HyperLink>&nbsp;&nbsp;| &nbsp;&nbsp;
+                     <asp:HyperLink runat="server" ID="hlContact" Text="Contact" CssClass="hyparlink" NavigateUrl="~/Admin Panel/Contact/List"> </asp:HyperLink>&nbsp;&nbsp;| &nbsp;&nbsp;
+                    <asp:HyperLink runat="server" ID="hlContactMany" Text="ContactMany" CssClass="hyparlink" NavigateUrl="~/Admin Panel/ContactMany/ContactManyList.aspx"> </asp:HyperLink>&nbsp;&nbsp;| &nbsp;&nbsp;
+                    <asp:HyperLink runat="server" ID="hlContactPhoto" Text="ContactPhoto" CssClass="hyparlink" NavigateUrl="~/Admin Panel/ContactPhoto/ContactPhotoList.aspx"> </asp:HyperLink>
+                </div>
+            <div class="col-md-12" style="text-align: right">
+                <asp:Label runat="server" ID="lblUserName" />&nbsp;&nbsp; | &nbsp;&nbsp;
+                <asp:LinkButton ID="lbtnLogout" runat="server" Text="Logout" OnClick="lbtnLogout_Click" CssClass="btn btn-primary btn-sm" />
+            </div>
+         </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                 <asp:ContentPlaceHolder id="cphMainContent" runat="server">
+                     
+                 </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div class="row col-md-12 footer">
+                
+                <div class="col-md-12" style="text-align:center;color:red; ">
+                       <h4>Dhaval Gohel | 190540107069 | 190540107069@darshan.ac.in</h4>
+                    <hr />
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="col-md-2 img-responsive">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Content/Images/du-logo-horizontal-white.svg" Height="54px" Width="100px" />
+                    </div>
+                    <div class="col-md-10">
+                        <p>
+                          Darshan University - having the foundation of its first Institution laid in 2009, and later on, established and consolidated under Gujarat Private Universities (Second Amendment) Act of 2021. It is one of the leading institutes within Saurashtra that offers Diploma, UG, and PG Courses.
+                        </p> 
+                   </div>
+
+                </div>
+            </div>
+       
+       
+    </div>
+    </form>
+</body>
+</html>

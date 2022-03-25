@@ -1,0 +1,36 @@
+﻿body {
+}
+.header{
+    background-color:#b6ff00;
+    top: 2px;
+    left: -2px;
+}
+
+.footer{
+    background-color:#b6ff00;
+}
+
+
+.hyparlink{
+    font-size:medium;
+    color:red;    
+}
+.MainHeading{
+    color:whitesmoke;
+    background-color:#ff0000;
+    font-family:Georgia, serif;
+    text-align:center;
+    font-weight: bold;
+}
+.SecondHeading{
+    color:red;
+    font-weight: bold;
+    text-align:justify;
+    text-decoration: underline;
+}
+.font{
+    font-family:Arial;
+    letter-spacing: 1px;
+    text-align: justify;
+
+}
